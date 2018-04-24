@@ -18,3 +18,17 @@ string hear(string promptUser)
 	cin >> userInput;
 	return userInput;
 }
+
+void badSwap(int x, int y)
+{
+	int temp = x;
+	x = y;
+	y = temp;
+}
+
+void goodSwap(int* const pX, int* const pY)
+{
+	int temp = *pX;
+	*pX = *pY;
+	*pY = temp;
+}
